@@ -1,6 +1,18 @@
 HMAC_SHA256 Key registered
 Save these values right now. They won't be shown ever again!
-
+------------------------------------------------------------------------------------
 API Key: oe4dViGH1VCOiigIeKCGJH498VxCXW6WnDe0Cw6mKK1elpZ1r4g9rXnfZWqOWTFr
 
 Secret Key: MxbvEnxsv4ngTVBexHjyhRrsIbAEcaZW4epgNVmZvMw0RKImLqelOkRb6dwku6Mv
+------------------------------------------------------------------------------------
+seting keys as veriables (Python):
+
+import os
+os.environ['api_secret'] = 'MxbvEnxsv4ngTVBexHjyhRrsIbAEcaZW4epgNVmZvMw0RKImLqelOkRb6dwku6Mv'
+os.environ['binance_api'] = 'oe4dViGH1VCOiigIeKCGJH498VxCXW6WnDe0Cw6mKK1elpZ1r4g9rXnfZWqOWTFr'
+
+print(os.environ.get('binance_api'))
+print(os.environ.get('api_secret'))
+------------------------------------------------------------------------------------
+set binance_api=oe4dViGH1VCOiigIeKCGJH498VxCXW6WnDe0Cw6mKK1elpZ1r4g9rXnfZWqOWTFr
+set binance_secret=MxbvEnxsv4ngTVBexHjyhRrsIbAEcaZW4epgNVmZvMw0RKImLqelOkRb6dwku6Mv
